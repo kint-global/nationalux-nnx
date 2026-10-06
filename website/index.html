@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="NNX — Nationalux AI & Data Economy Token. Ethereum ERC-20 ecosystem for data, AI services, digital content and participation.">
+<title>NNX | Nationalux AI & Data Economy</title>
+<style>
+:root{--navy:#081a35;--blue:#1677ff;--cyan:#35b7ff;--ink:#17243b;--muted:#64748b;--line:#dce7f5;--soft:#f5f9ff;--white:#fff;--green:#0c9b7b;--purple:#7047d8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;font-size:25px;letter-spacing:-1px}.brand span{color:var(--blue)}
+.links{display:flex;gap:22px;font-size:14px;font-weight:700;color:#526177}.links a:hover{color:var(--blue)}
+.hero{background:radial-gradient(circle at 78% 20%,#164d8d 0,#0b2b57 25%,#081a35 62%,#061326 100%);color:white;padding:100px 0 90px;overflow:hidden}
+.eyebrow{display:inline-block;padding:7px 12px;border:1px solid #4d78a9;border-radius:999px;color:#b8d9ff;font-size:12px;font-weight:800;letter-spacing:.08em}
+.hero h1{font-size:clamp(48px,8vw,92px);line-height:.92;margin:22px 0 18px;letter-spacing:-4px}.hero h1 span{background:linear-gradient(90deg,#fff,#59c7ff);-webkit-background-clip:text;color:transparent}
+.hero h2{font-size:clamp(22px,3vw,38px);max-width:850px;margin:0 0 20px}.hero p{max-width:760px;color:#c9d8eb;font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-block;padding:13px 18px;border-radius:10px;font-weight:800}.primary{background:white;color:var(--navy)}.ghost{border:1px solid #5679a2;color:white}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-34px}.stat{background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px #0a2d5912;border-radius:16px;padding:20px}.stat b{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}
+section{padding:82px 0}.soft{background:var(--soft)}.kicker{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:.12em;text-transform:uppercase}
+h3{font-size:clamp(30px,4vw,48px);line-height:1.1;margin:8px 0 18px;letter-spacing:-1.5px}.lead{max-width:820px;color:var(--muted);font-size:17px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}.card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:24px}.icon{font-size:26px}.card h4{margin:12px 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:34px}.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 14px;text-align:center;min-height:135px}.step b{display:block;color:var(--blue);font-size:12px;margin-bottom:8px}.step strong{font-size:15px}.step small{display:block;color:var(--muted);margin-top:7px}.step:not(:last-child):after{content:"→";position:absolute;right:-12px;top:46%;z-index:2;color:var(--blue);font-weight:900}
+.token{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}.facts{border:1px solid var(--line);border-radius:16px;overflow:hidden}.row{display:grid;grid-template-columns:180px 1fr;border-bottom:1px solid var(--line)}.row:last-child{border:0}.row b,.row span{padding:13px 16px}.row b{background:#f7faff;font-size:13px}.row span{font-size:13px;overflow-wrap:anywhere}
+.notice{padding:16px;border-left:4px solid var(--blue);background:#eef6ff;border-radius:8px;color:#42526a;font-size:14px}
+.alloc{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:32px}.bar{height:12px;background:#e7eef8;border-radius:99px;overflow:hidden;margin:6px 0 15px}.fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--cyan))}
+.alloc-line{display:grid;grid-template-columns:1fr 50px;gap:12px;font-size:14px}.alloc-line b{text-align:right}
+.road{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:32px}.phase{border-top:4px solid var(--blue);background:#fff;border-radius:8px;padding:18px;box-shadow:0 5px 20px #0a2d590d}.phase em{font-style:normal;color:var(--blue);font-size:12px;font-weight:900}.phase h4{margin:7px 0}.phase p{font-size:13px;color:var(--muted);margin:0}
+.legal{font-size:13px;color:#607089}.footer{background:var(--navy);color:#c6d4e6;padding:42px 0}.footer strong{color:#fff}
+
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px;align-items:start}
+.footer h5{margin:0 0 10px;color:#fff;font-size:14px}.footer p{margin:4px 0;font-size:13px}
+.footer a{color:#c6d4e6}.footer a:hover{color:#fff}
+.footer-links{display:flex;flex-direction:column;gap:7px;font-size:13px}
+.contract-mini{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:11px;overflow-wrap:anywhere;color:#9fb3cc}
+.footer-bottom{border-top:1px solid #24405f;margin-top:28px;padding-top:18px;font-size:12px;color:#91a6bf;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.status{display:inline-block;padding:4px 8px;border:1px solid #355576;border-radius:999px;font-size:11px;margin-top:8px}
+@media(max-width:850px){.links{display:none}.stats,.grid4{grid-template-columns:1fr 1fr}.flow{grid-template-columns:1fr 1fr}.step:after{display:none}.token,.alloc{grid-template-columns:1fr}.road{grid-template-columns:1fr}.row{grid-template-columns:130px 1fr}}
+@media(max-width:850px){.footer-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.stats,.grid4,.flow{grid-template-columns:1fr}.hero{padding-top:70px}.hero h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><div class="brand">N<span>N</span>X</div><div class="links"><a href="#ecosystem">Ecosystem</a><a href="#utility">Utility</a><a href="#token">Token</a><a href="#growth">Growth</a><a href="#legal">Legal</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap">
+<span class="eyebrow">ETHEREUM ERC-20 · DEPLOYED IN 2020</span>
+<h1><span>NNX</span></h1>
+<h2>The Utility Layer for the AI & Data Economy</h2>
+<p>NNX connects data providers, AI service providers, enterprises, creators and users through a common digital utility layer for data access, AI services, digital content and ecosystem participation.</p>
+<div class="actions">
+<a class="btn primary" href="#token">Token Information</a>
+<a class="btn ghost" href="#ecosystem">Explore Ecosystem</a>
+</div>
+</div>
+</header>
+
+<div class="wrap stats">
+<div class="stat"><b>Ethereum</b><span>Network</span></div>
+<div class="stat"><b>ERC-20</b><span>Token Standard</span></div>
+<div class="stat"><b>9,999,900 NNX</b><span>Observed Total Supply</span></div>
+<div class="stat"><b>18</b><span>Decimals</span></div>
+</div>
+
+<section id="ecosystem"><div class="wrap">
+<div class="kicker">Nationalux Ecosystem</div><h3>One token. Multiple digital economies.</h3>
+<p class="lead">NNX expands the original Nationalux content-economy concept into a domain-neutral ecosystem connecting data, artificial intelligence, digital content and enterprise participation.</p>
+<div class="grid4">
+<div class="card"><div class="icon">▣</div><h4>Data</h4><p>Enterprise, institutional and creator data can participate in catalog, access and AI-ready workflows under applicable rights and contracts.</p></div>
+<div class="card"><div class="icon">✦</div><h4>AI Services</h4><p>AI models, agents, analytics and enterprise services can connect to data resources and supported NNX utility.</p></div>
+<div class="card"><div class="icon">▶</div><h4>Media</h4><p>Creator and viewer rewards preserve the original NNX content-economy use case while expanding beyond video.</p></div>
+<div class="card"><div class="icon">◎</div><h4>Enterprises & Users</h4><p>Businesses, developers and users can access supported services and participate in the broader ecosystem.</p></div>
+</div>
+</div></section>
+
+<section class="soft" id="utility"><div class="wrap">
+<div class="kicker">Data → AI → Value</div><h3>A practical digital value flow</h3>
+<div class="flow">
+<div class="step"><b>01</b><strong>Raw Data</strong><small>Enterprise · Public · Digital</small></div>
+<div class="step"><b>02</b><strong>Processing</strong><small>Structure · Semantic · Quality</small></div>
+<div class="step"><b>03</b><strong>AI-Ready Data</strong><small>Catalog · Metadata · Access</small></div>
+<div class="step"><b>04</b><strong>AI Services</strong><small>Models · Agents · Analytics</small></div>
+<div class="step"><b>05</b><strong>Economic Value</strong><small>Services · Automation · Insights</small></div>
+<div class="step"><b>06</b><strong>NNX Utility</strong><small>Access · Reward · Settlement</small></div>
+</div>
+</div></section>
+
+<section id="token"><div class="wrap token">
+<div>
+<div class="kicker">Token Information</div><h3>Existing Ethereum infrastructure</h3>
+<p class="lead">NNX is an existing Ethereum Mainnet token. Whitepaper 2.0 expands utility around the existing token rather than presenting a newly created asset.</p>
+<div class="notice"><strong>Important:</strong> the 2020 whitepaper described a planned 100,000,000 NNX distribution. The currently observed on-chain total supply is 9,999,900 NNX. Current blockchain state, not the historical plan, is the basis for the updated disclosure.</div>
+</div>
+<div class="facts">
+<div class="row"><b>Token</b><span>Nationalux (NNX)</span></div>
+<div class="row"><b>Network</b><span>Ethereum Mainnet</span></div>
+<div class="row"><b>Standard</b><span>ERC-20</span></div>
+<div class="row"><b>Decimals</b><span>18</span></div>
+<div class="row"><b>Total Supply</b><span>9,999,900 NNX (observed)</span></div>
+<div class="row"><b>Contract</b><span>0x1a5a018A46Cd4C5C4E04464C44f74B3B10C01DbE</span></div>
+<div class="row"><b>Original Deployment</b><span>January 29, 2020 · 00:13:20 UTC</span></div>
+<div class="row"><b>Current Non-Company Holdings</b><span>71 NNX</span></div>
+<div class="row"><b>Target Initial Circulation</b><span>1,199,988 NNX (approx. 12%)</span></div>
+</div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+<div class="kicker">Treasury Allocation Framework</div><h3>Utility-led allocation for the NNX ecosystem</h3>
+<p class="lead">The NNX ecosystem allocation framework establishes maximum purpose-based allocation pools. Specific partner allocations, vesting periods and lock-up conditions will be determined when applicable partnerships or programs are established.</p>
+<div class="alloc">
+<div>
+<div class="alloc-line"><span>Data & Ecosystem Rewards</span><b>35%</b></div><div class="bar"><div class="fill" style="width:35%"></div></div>
+<div class="alloc-line"><span>Strategic Data Partners</span><b>25%</b></div><div class="bar"><div class="fill" style="width:25%"></div></div>
+<div class="alloc-line"><span>Exchange & Liquidity</span><b>15%</b></div><div class="bar"><div class="fill" style="width:15%"></div></div>
+</div>
+<div>
+<div class="alloc-line"><span>AI Service & Developer Incentives</span><b>10%</b></div><div class="bar"><div class="fill" style="width:10%"></div></div>
+<div class="alloc-line"><span>Long-Term Treasury Reserve</span><b>10%</b></div><div class="bar"><div class="fill" style="width:10%"></div></div>
+<div class="alloc-line"><span>Media & Creator Rewards</span><b>5%</b></div><div class="bar"><div class="fill" style="width:5%"></div></div>
+</div>
+</div>
+<p class="lead" style="margin-top:28px"><strong>Release policy:</strong> NNX does not currently use a predetermined time-based unlock schedule. Treasury tokens are allocated progressively in connection with actual ecosystem activity. The target initial circulating supply at exchange listing is 1,199,988 NNX (approximately 12%), including existing non-company holdings; it is not a commitment to sell the entire amount into the market. Material treasury allocations or material increases in circulation will be disclosed in advance.</p>
+</div></section>
+
+<section><div class="wrap">
+<div class="kicker">Smart Contract Authority</div><h3>Administration separated from treasury custody</h3>
+<div class="grid4">
+<div class="card"><h4>Administrative Address</h4><p><code>0x0d42b0e471C0A702dfe12417e2354cc9F1680A09</code></p></div>
+<div class="card"><h4>Mint Authority</h4><p>Active on the Nationalux-controlled administrative address. No additional issuance is currently scheduled.</p></div>
+<div class="card"><h4>Pause Authority</h4><p>Active on the Nationalux-controlled administrative address for emergency contract administration.</p></div>
+<div class="card"><h4>Principal Treasury</h4><p><code>0xe3621488A974FCA5d39F9e72Afb738F04255412A</code><br>Not a minter or pauser.</p></div>
+</div>
+<div class="notice"><strong>Supply policy:</strong> 9,999,900 NNX is the current total supply, not a hard maximum supply. Existing treasury holdings are intended to be used before any additional issuance is considered. Any material future issuance is subject to formal Nationalux approval and prior public disclosure.</div>
+</div></section>
+
+<section id="growth"><div class="wrap">
+<div class="kicker">Growth Strategy</div><h3>Connect data groups. Add utility. Expand through disciplined roll-ups.</h3>
+<div class="road">
+<div class="phase"><em>PHASE 1</em><h4>Reactivation</h4><p>Contract, treasury, source and public disclosures are verified.</p></div>
+<div class="phase"><em>PHASE 2</em><h4>Data Network</h4><p>Independent data groups connect through common interfaces while retaining their own expertise.</p></div>
+<div class="phase"><em>PHASE 3</em><h4>AI Utility</h4><p>Data access, AI services and ecosystem incentives create measurable usage.</p></div>
+<div class="phase"><em>PHASE 4</em><h4>Roll-Up Expansion</h4><p>Complementary data and software companies may join through separate lawful corporate transactions.</p></div>
+<div class="phase"><em>PHASE 5</em><h4>Global Access</h4><p>Broader partners, markets and suitable exchange access support ecosystem expansion.</p></div>
+</div>
+</div></section>
+
+<section class="soft"><div class="wrap">
+<div class="kicker">Governance</div><h3>Token utility is separate from corporate ownership.</h3>
+<div class="grid4">
+<div class="card"><h4>No Equity</h4><p>NNX does not itself represent shares of Nationalux Lab Inc.</p></div>
+<div class="card"><h4>No Corporate Vote</h4><p>Token holders do not receive director-election or corporate voting rights merely by holding NNX.</p></div>
+<div class="card"><h4>No Guaranteed Return</h4><p>NNX does not promise appreciation, dividends, profits or a guaranteed market.</p></div>
+<div class="card"><h4>No Fixed Redemption</h4><p>NNX is not presented as a fiat-backed stablecoin and has no promised 1:1 fiat redemption.</p></div>
+</div>
+</div></section>
+
+<section id="legal"><div class="wrap">
+<div class="kicker">Legal & Risk</div><h3>Compliance-by-design</h3>
+<p class="lead">Nationalux intends to separate token utility, corporate ownership, data rights and regulated financial activities. Any public distribution, fundraising, exchange, redemption, custody or client-transfer functionality should be reviewed under the laws applicable to the relevant activity and jurisdiction.</p>
+<p class="legal"><strong>Disclaimer.</strong> This webpage is an informational project summary and is not a prospectus, offering memorandum, investment recommendation, legal opinion, promise of future value or guarantee of exchange listing. The legal characterization of a crypto asset depends on the facts and circumstances of its distribution and use. Data ownership, licensing, privacy and AI-service obligations remain subject to applicable contracts and law.</p>
+</div></section>
+
+<footer class="footer"><div class="wrap">
+<div class="footer-grid">
+  <div>
+    <h5>NNX — Nationalux AI & Data Economy</h5>
+    <p>Operated by <strong>Nationalux Lab Inc.</strong></p>
+    <p>Suite 318 – 1199 West Pender Street<br>Vancouver, British Columbia V6E 2R1, Canada</p>
+    <p>Email: <a href="mailto:kmat0@nationalux.cate24.com">kmat0@nationalux.cate24.com</a></p>
+    <span class="status">Ethereum ERC-20 · Existing Mainnet Token</span>
+  </div>
+  <div>
+    <h5>Token</h5>
+    <div class="footer-links">
+      <a href="#token">Token Information</a>
+      <a href="#utility">Utility</a>
+      <a href="#growth">Growth Strategy</a>
+      <a href="#legal">Legal & Risk</a>
+    </div>
+    <p class="contract-mini">Contract:<br>0x1a5a018A46Cd4C5C4E04464C44f74B3B10C01DbE</p>
+  </div>
+  <div>
+    <h5>Project Resources</h5>
+    <div class="footer-links">
+      <span>Whitepaper · Preparing public URL</span>
+      <a href="https://github.com/kint-global/nationalux-nnx" target="_blank" rel="noopener">GitHub · Public Repository</a>
+      <span>X · Preparing official account</span>
+      <span>Telegram · Preparing official channel</span>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <span>© 2026 Nationalux Lab Inc. All rights reserved.</span>
+  <span>Whitepaper 2.0 / Website Edition · October 2026</span>
+</div>
+</div></footer>
+</body>
+</html>
