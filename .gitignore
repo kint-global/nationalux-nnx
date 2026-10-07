@@ -1,1 +1,15 @@
-.firebase/
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Node / test output
+node_modules/
+coverage/

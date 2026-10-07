@@ -1,0 +1,17 @@
+{
+  "name": "nationalux-nnx",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Public integration and mainnet-state verification toolkit for NNX (Nationalux) on Ethereum Mainnet.",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "verify:state": "node scripts/verify-state.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "ethers": "^6.13.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
