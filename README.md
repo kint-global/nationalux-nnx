@@ -109,3 +109,8 @@ Email: kmat0@nationalux.cate24.com
 NNX does not itself represent equity in Nationalux Lab Inc., corporate voting rights, dividends, guaranteed returns or fixed fiat redemption.
 
 © 2026 Nationalux Lab Inc.
+
+
+## Deployed Bytecode Evidence
+
+The canonical runtime bytecode is included at `contract/DEPLOYED_BYTECODE.txt`. Etherscan reports an exact-bytecode match at `0xED8E3d54abc8E4a55d320FFfa5A3E9963f3Ea8a6`. See `contract/README.md` and `docs/VERIFICATION.md` for provenance limitations.

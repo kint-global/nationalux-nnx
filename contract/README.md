@@ -51,6 +51,14 @@ Do not add a reconstructed `NNX.sol` and label it as the original contract unles
 
 `ABI.json` is a conservative public integration interface for known ERC-20 and observed administrative functions. It is not represented as an ABI generated from verified historical Solidity source.
 
-## Canonical Bytecode
+## Canonical Deployed Bytecode
 
-The authoritative deployed bytecode is the bytecode returned by Ethereum Mainnet for the contract address. `scripts/verify-state.js` confirms that bytecode is present. This repository intentionally avoids publishing fabricated historical source or claiming unverifiable provenance.
+`DEPLOYED_BYTECODE.txt` contains the EVM runtime bytecode displayed for the canonical NNX deployment. It is provided for reproducibility, technical inspection and comparison with Ethereum Mainnet state. `scripts/verify-state.js` independently confirms that bytecode is present at the canonical address.
+
+Etherscan Similar Contracts Search also reports an **exact bytecode match** at:
+
+`0xED8E3d54abc8E4a55d320FFfa5A3E9963f3Ea8a6`
+
+The matching contract is also shown with creator `0x0d42b0e471C0A702dfe12417e2354cc9F1680A09`. At the time of documentation, neither contract is presented by Etherscan as verified Solidity source; both pages invite the creator to verify and publish source. The exact-match address is therefore supporting bytecode evidence, not a substitute for original Solidity provenance.
+
+This repository intentionally does **not** publish reconstructed or decompiled Solidity as the original 2020 source. If historical source is later recovered, it should only be represented as matching the deployment after reproducible compiler/settings verification.

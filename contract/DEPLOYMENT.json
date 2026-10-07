@@ -23,5 +23,16 @@
   "chain_id": 1,
   "admin_control_current": "EOA",
   "admin_security_roadmap": "Evaluate Safe-compatible multisignature transition; potential 3-of-5 only after on-chain deployment and operational approval",
-  "treasury_security_roadmap": "Evaluate verifiable time-lock/vesting controls for approved material allocations; not currently represented as deployed"
+  "treasury_security_roadmap": "Evaluate verifiable time-lock/vesting controls for approved material allocations; not currently represented as deployed",
+  "sourceVerification": {
+    "etherscanVerifiedSource": false,
+    "originalSolidityInRepository": false,
+    "deployedBytecodeFile": "DEPLOYED_BYTECODE.txt"
+  },
+  "exactBytecodeMatch": {
+    "address": "0xED8E3d54abc8E4a55d320FFfa5A3E9963f3Ea8a6",
+    "creator": "0x0d42b0e471C0A702dfe12417e2354cc9F1680A09",
+    "similarity": "exact",
+    "sourceVerified": false
+  }
 }
